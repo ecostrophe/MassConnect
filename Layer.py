@@ -9,7 +9,7 @@ class Layer:
 		self.layer_type = layer_type
 		#The num_neurons attribute represents the number of neurons in the layer.
 		self.num_neurons = num_neurons
-		self.neurons = neurons if neurons is not None else [Neuron(i,layer=self.layer_type) for i in range(num_neurons)]
+		self.neurons = neurons if neurons is not None else [Neuron(i, layer=self.layer_type) for i in range(num_neurons)]
 	
 	def set_layer_type (self, new_type):
 		self.layer_type=new_type
